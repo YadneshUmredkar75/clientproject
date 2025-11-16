@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from egramsevak.in/GPWeb/template2/facilities.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 15 Nov 2025 13:01:46 GMT -->
+<head>
+     <meta charset="utf-8">
+    <title>सुंदरखेड ग्रामपंचायत</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+    <link href="img/favicon.html" rel="icon">
+    <link rel="preconnect" href="../../../fonts.googleapis.com/index.html">
+    <link rel="preconnect" href="../../../fonts.gstatic.com/index.html" crossorigin>
+    <link href="../../../fonts.googleapis.com/css27302.css?family=Tiro+Devanagari+Sanskrit:ital@0;1&amp;display=swap" rel="stylesheet">
+    <link href="../../../cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" rel="stylesheet">
+    <link href="../../../cdn.jsdelivr.net/npm/bootstrap-icons%401.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+<style>
+     .diagonal-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #f8f5f0 50%, #800000 50%);
+    z-index: 1;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 60%);
+}
+
+/* Text on Cream Part */
+.footer .col-lg-3:nth-child(-n+2) {
+    color: #333;
+}
+
+.footer .col-lg-3:nth-child(-n+2) h4,
+.footer .col-lg-3:nth-child(-n+2) h6,
+.footer .col-lg-3:nth-child(-n+2) a {
+    color: #800000 !important;
+}
+
+.footer .col-lg-3:nth-child(-n+2) .text-warning {
+    color: #800000 !important;
+}
+
+.footer .col-lg-3:nth-child(-n+2) .btn-outline-warning {
+    border-color: #800000;
+    color: #800000;
+}
+
+.footer .col-lg-3:nth-child(-n+2) .btn-outline-warning:hover {
+    background: #800000;
+    color: #f8f5f0;
+}
+
+/* Text on Maroon Part */
+.footer .col-lg-3:nth-child(n+3) {
+    color: #f8f5f0;
+}
+
+.footer .col-lg-3:nth-child(n+3) h4,
+.footer .col-lg-3:nth-child(n+3) h6,
+.footer .col-lg-3:nth-child(n+3) a {
+    color: #f8f5f0 !important;
+}
+
+.footer .col-lg-3:nth-child(n+3) .text-warning {
+    color: black !important;
+}
+
+/* Hover Effects */
+.footer a:hover {
+    color: #ffc107 !important;
+    text-decoration: underline !important;
+}
+
+.footer img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(128, 0, 0, 0.3) !important;
+}
+
+.footer .btn-outline-warning {
+    transition: all 0.3s ease;
+}
+
+.footer .btn-outline-warning:hover {
+    transform: translateY(-2px);
+}
+
+/* Responsive Fix */
+@media (max-width: 992px) {
+    .diagonal-bg {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 70%);
+    }
+}
+        :root {
+            --cream: #f8f5f0;
+            --maroon: #800000;
+            --gold: #ffc107;
+            --dark: #000;
+        }
+
+        body {
+            background: var(--cream);
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            color: var(--dark);
+        }
+
+        /* Facilities Section */
+        .facilities-section {
+            padding: 90px 0 60px;
+            background: var(--cream);
+            min-height: 100vh;
+        }
+
+        .section-title {
+            color: var(--maroon) !important;
+            font-weight: 700;
+            font-size: 1rem;
+            padding: 8px 24px;
+            background: #fff;
+            border-radius: 50px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+            display: inline-block;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -8px; left: 50%;
+            width: 60px; height: 3px;
+            background: var(--gold);
+            border-radius: 2px;
+            transform: translateX(-50%);
+        }
+
+        .facilities-section h1 {
+            color: var(--dark) !important;
+            font-weight: 700;
+            font-size: 1.95rem;
+            margin: 18px 0 12px;
+            line-height: 1.3;
+        }
+
+        .facilities-section p.lead {
+            color: #555;
+            font-size: 1rem;
+            margin-bottom: 0;
+        }
+
+        /* Sidebar */
+        .facility-sidebar {
+            position: sticky;
+            top: 100px;
+        }
+
+        .facility-sidebar h1 {
+            font-size: 1.9rem;
+            margin-bottom: 12px;
+        }
+
+        .facility-sidebar p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        /* Facility Card */
+        .facility-card {
+            background: #fff;
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+            transition: all 0.35s ease;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .facility-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 16px 35px rgba(0,0,0,0.16);
+            border: 2.5px solid var(--gold);
+        }
+
+        .facility-image {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            transition: transform 0.35s ease;
+        }
+
+        .facility-card:hover .facility-image {
+            transform: scale(1.06);
+        }
+
+        .facility-body {
+            padding: 22px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .facility-title {
+            color: var(--dark);
+            font-weight: 700;
+            font-size: 1.2rem;
+            margin: 0 0 12px;
+            line-height: 1.3;
+        }
+
+        .facility-desc {
+            color: #666;
+            font-size: 0.92rem;
+            margin-bottom: 14px;
+            flex-grow: 1;
+            line-height: 1.5;
+        }
+
+        .facility-details {
+            font-size: 0.88rem;
+            color: #444;
+            line-height: 1.6;
+        }
+
+        .facility-details strong {
+            color: var(--dark);
+        }
+
+        .facility-details .info-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 6px;
+        }
+
+        .facility-details .info-item {
+            background: #f8f8f8;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 0.82rem;
+            color: var(--maroon);
+            font-weight: 600;
+        }
+
+        /* Responsive Grid */
+        .facilities-row {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 28px;
+        }
+
+        @media (min-width: 576px) {
+            .facilities-row { grid-template-columns: repeat(2, 1fr); }
+        }
+
+        @media (min-width: 992px) {
+            .facilities-row { grid-template-columns: repeat(3, 1fr); }
+        }
+
+        /* Wave */
+        .facilities-section::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 18px;
+            background: linear-gradient(90deg, var(--maroon), #a00000, var(--maroon));
+            clip-path: ellipse(80% 100% at 50% 0%);
+        }
+
+        /* Back Button */
+        .back-btn {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background: var(--maroon);
+            color: #fff;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.3rem;
+            box-shadow: 0 4px 14px rgba(128,0,0,0.3);
+            z-index: 1000;
+            transition: 0.3s;
+        }
+
+        .back-btn:hover {
+            background: #a00000;
+            transform: scale(1.1);
+        }
+        /* navbar */
+        
+        /* ---------- COLORS ---------- */
+        .bg-cream { background:#f8f5f0 !important; }
+        .text-black { color:#000 !important; }
+        .text-golden { color:#ffc107 !important; }
+
+        /* ---------- TOP BAR DIAGONAL ---------- */
+        .top-bar-wrapper { 
+            position:relative; 
+            overflow:hidden; 
+            background:#800000; 
+        }
+        .top-bar-diagonal {
+            position:absolute; 
+            top:0; 
+            left:0; 
+            width:100%; 
+            height:100%;
+            background:linear-gradient(135deg, #f8f5f0 45%, #800000 45%);
+            z-index:1;
+        }
+
+        /* ---------- TOP BAR CONTENT ---------- */
+        .top-bar { 
+            position:relative; 
+            z-index:2; 
+        }
+        .top-icon { 
+            font-size:1.3rem; 
+            width:40px; 
+            text-align:center; 
+        }
+
+        /* ---------- NAVBAR ---------- */
+        .navbar-custom { 
+            background:#f8f5f0 !important; 
+            box-shadow:0 2px 10px rgba(0,0,0,.1); 
+        }
+
+        .navbar-custom .navbar-brand,
+        .navbar-custom .nav-link,
+        .navbar-custom .dropdown-item,
+        .navbar-custom .form-select,
+        .navbar-custom .social-btn { 
+            color:#000 !important; 
+            font-weight:500; 
+        }
+
+        /* Hover & Active */
+        .navbar-custom .nav-link:hover,
+        .navbar-custom .nav-link.active,
+        .navbar-custom .dropdown-item:hover { 
+            color:#ffc107 !important; 
+        }
+
+        /* Underline */
+        .navbar-custom .nav-link {
+            position:relative; 
+            padding:.5rem 1rem; 
+            transition:.3s;
+        }
+        .navbar-custom .nav-link::after {
+            content:''; 
+            position:absolute; 
+            bottom:0; 
+            left:50%;
+            width:0; 
+            height:2px; 
+            background:#ffc107;
+            transition:.3s; 
+            transform:translateX(-50%);
+        }
+        .navbar-custom .nav-link:hover::after,
+        .navbar-custom .nav-link.active::after { 
+            width:70%; 
+        }
+
+        /* Dropdown Menu */
+        .dropdown-menu { 
+            background:white; 
+            border:1px solid black; 
+            box-shadow:0 5px 15px rgba(0,0,0,.1); 
+        }
+        .dropdown-item { 
+            transition:.3s; 
+        }
+        .dropdown-item:hover { 
+            background:#800000; 
+            color:white !important; 
+        }
+
+        /* Social & Language */
+        .social-btn {
+            display:inline-flex; 
+            align-items:center; 
+            justify-content:center;
+            width:36px; 
+            height:36px; 
+            border:1.5px solid #000;
+            border-radius:50%; 
+            font-size:.9rem; 
+            transition:.3s;
+        }
+        .social-btn:hover { 
+            background:#000; 
+            color:#f8f5f0 !important; 
+            transform:translateY(-2px); 
+        }
+        .lang-select { 
+            min-width:90px; 
+            font-size:.9rem; 
+            border:1.5px solid #000; 
+        }
+
+        /* FIXED TOGGLE BUTTON STYLES */
+        .navbar-toggler {
+            border: 1.5px solid #000 !important;
+            padding: 4px 8px;
+        }
+        
+        .navbar-toggler:focus {
+            box-shadow: none !important;
+        }
+        
+        .navbar-toggler-icon-custom {
+            display: inline-block;
+            width: 1.5em;
+            height: 1.5em;
+            vertical-align: middle;
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100%;
+        }
+
+        /* ---------- RESPONSIVE ---------- */
+        @media (max-width: 992px) {
+            .top-info { 
+                justify-content:center !important; 
+                margin-bottom:1rem; 
+            }
+            .navbar-nav { 
+                text-align:center; 
+                padding: 1rem 0;
+            }
+            .navbar-custom .nav-link::after { 
+                display:none; 
+            }
+            
+            /* Improved mobile dropdown styling */
+            .dropdown-menu {
+                text-align: center;
+                background: rgba(248, 245, 240, 0.9);
+                border: none;
+                margin-top: 0.5rem;
+            }
+            
+            .dropdown-toggle::after {
+                margin-left: 0.5rem;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .site-title { 
+                font-size:1.4rem !important; 
+            }
+            .top-info strong { 
+                font-size:.9rem; 
+            }
+            
+            .navbar-brand {
+                font-size: 1.2rem;
+            }
+        }
+
+        /* Mobile dropdown fix – make it full-width & clickable */
+        @media (max-width: 991.98px) {
+            .dropdown-toggle { 
+                width:100%; 
+                text-align:center; 
+            }
+            .dropdown-menu { 
+                position:static; 
+                float:none; 
+                width:100%; 
+                margin-top:0; 
+            }
+        }
+        
+        /* Demo content styles */
+        .demo-content {
+            padding: 2rem;
+            background: #f8f9fa;
+            min-height: 400px;
+        }
+        
+        .demo-section {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+        }
+   
+    </style>
+</head>
+
+<body>
+ 
+    <!-- ==================== TOP BAR ==================== -->
+    <div class="top-bar-wrapper">
+        <div class="top-bar-diagonal"></div>
+
+        <div class="container-fluid top-bar py-3">
+            <div class="container position-relative" style="z-index:2;">
+                <div class="row align-items-center text-center text-lg-start">
+
+                    <!-- Site Title -->
+                    <div class="col-lg-4 mb-3 mb-lg-0">
+                        <h2 class="site-title text-black fw-bold mb-0">ढवळापूर ग्रामपंचायत</h2>
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div class="col-lg-8">
+                        <div class="row text-black g-2 justify-content-center justify-content-lg-end">
+
+                            <div class="col-6 col-sm-4 col-lg-4 top-info d-flex align-items-center justify-content-center justify-content-lg-start">
+                                <div class="top-icon text-warning me-2"><i class="fa fa-phone-alt"></i></div>
+                                <div><div class="small">आपातकालीन</div><strong>७२१८२०९२७६</strong></div>
+                            </div>
+
+                            <div class="col-6 col-sm-4 col-lg-4 top-info d-flex align-items-center justify-content-center justify-content-lg-start">
+                                <div class="top-icon text-warning me-2"><i class="fa fa-envelope-open"></i></div>
+                                <div><div class="small">ईमेल</div><strong>gpdhawalapur@gmail.com</strong></div>
+                            </div>
+
+                            <div class="col-12 col-sm-4 col-lg-4 top-info d-flex align-items-center justify-content-center justify-content-lg-start">
+                                <div class="top-icon text-warning me-2"><i class="fa fa-map-marker-alt"></i></div>
+                                <div><div class="small">पत्ता</div><strong>हनुमान मंदिर ढवळापूर ता.काटोल 
+</strong></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== NAVBAR ==================== -->
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container">
+
+            <!-- Brand -->
+            <a class="navbar-brand text-black fw-bold" href="#">
+</a>
+
+            <!-- FIXED TOGGLER BUTTON -->
+            <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#navMenu"
+                    aria-controls="navMenu" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon-custom"></span>
+            </button>
+
+            <!-- COLLAPSIBLE MENU -->
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item">
+                        <a class="nav-link text-black active" href="index.html">मुख्यपृष्ठ</a>
+                    </li>
+
+                    <!-- Dropdown 1 -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-black" href="#" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            आमच्याबद्दल
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="about.html">परिचय</a></li>
+                            <li><a class="dropdown-item" href="team.html">पंचायत मंडळ</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-black" href="annoucements.html">सूचना</a>
+                    </li>
+
+                    <!-- Dropdown 2 -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-black" href="#" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            सेवा
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="service.html">नागरिक सेवा</a></li>
+                            <li><a class="dropdown-item" href="facilities.html">स्थानीय सुविधा</a></li>
+                            
+
+                            <li><a class="dropdown-item" href="govt-schemes.html">शासकीय योजना</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-black" href="gallery.html">गॅलरी</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-black" href="contact.html">संपर्क</a>
+                    </li>
+
+                </ul>
+
+                <!-- Right side -->
+                <div class="d-flex align-items-center gap-2">
+                    <select class="form-select form-select-sm lang-select">
+                        <option>मराठी</option>
+                        <option>English</option>
+                    </select>
+                    <a href="#" class="social-btn text-black"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-btn text-black"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+  
+    <!-- Navbar End -->
+
+
+    <!-- Service Start -->
+    <!-- BACK BUTTON -->
+<button class="back-btn" onclick="history.back()" aria-label="मागे जा">
+    <i class="fas fa-arrow-left"></i>
+</button>
+
+<!-- LOCAL FACILITIES SECTION -->
+<div class="container-fluid facilities-section position-relative">
+    <div class="container">
+        <div class="row g-5">
+
+            <!-- Sidebar -->
+            <div class="col-lg-4 col-xl-3">
+                <div class="facility-sidebar wow fadeIn" data-wow-delay="0.1s">
+                    <h1>स्थानीय सुविधा</h1>
+                    <p class="lead">सुविधा - आरोग्य, शिक्षण व इतर</p>
+                </div>
+            </div>
+
+            <!-- Facilities Grid -->
+            <div class="col-lg-8 col-xl-9">
+                <div class="facilities-row">
+
+                    <!-- Facility 1: School -->
+                    <div class="facility-card wow fadeIn" data-wow-delay="0.1s">
+                        <img src="img/ZPSchool.jpg" alt="झेडपी शाळा" class="facility-image">
+                        <div class="facility-body">
+                            <h4 class="facility-title">शाळा</h4>
+                            <p class="facility-desc">
+                                शाळा डिजिटल करणे, मुलांचा मोफत आरोग्य तपासणी, उत्कृष्ट शौचालय व्यवस्था. 
+                                शाळेला आवश्यकतेनुसार आरोग्य व शिक्षण सुविधा उपलब्ध करणे.
+                            </p>
+                            <div class="facility-details">
+                                <p><strong>सारांश:</strong> उत्कृष्ट डिजिटल शाळा व कॉम्प्युटर लॅब</p>
+                                <div class="info-group">
+                                    <span class="info-item">एकूण: ६७</span>
+                                    <span class="info-item">मुलगे: ३४</span>
+                                    <span class="info-item">मुली: ३३</span>
+                                </div>
+                                <p><strong>उपलब्ध सुविधा:</strong> पोषण आहार, मोफत गणवेश, पाठ्यपुस्तके, आरोग्य तपासणी</p>
+                                <p><strong>पत्ता:</strong> मौजे हनुमान मंदिर ढवळापूर ता.काटोल 
+, जि. नागपूर</p>
+                                <p><strong>वेळ:</strong> १०:३० ते ५:००</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Facility 2: Anganwadi -->
+                    <div class="facility-card wow fadeIn" data-wow-delay="0.2s">
+                        <img src="img/anganwadi.jpg" alt="अंगणवाडी" class="facility-image">
+                        <div class="facility-body">
+                            <h4 class="facility-title">अंगणवाडी</h4>
+                            <p class="facility-desc">
+                                अंगणवाडी डिजिटल करणे, मुलांचा मोफत आरोग्य तपासणी, उत्तम शौचालय व्यवस्था.
+                                आवश्यकतेनुसार शिक्षण व आरोग्य सुविधा उपलब्ध करणे.
+                            </p>
+                            <div class="facility-details">
+                                <p><strong>सारांश:</strong> उत्कृष्ट डिजिटल अंगणवाडी व कॉम्प्युटर लॅब</p>
+                                <div class="info-group">
+                                    <span class="info-item">एकूण: ५४</span>
+                                    <span class="info-item">मुलगे: २५</span>
+                                    <span class="info-item">मुली: २९</span>
+                                </div>
+                                <p><strong>उपलब्ध सुविधा:</strong> पोषण आहार, गणवेश, पाठ्यपुस्तके, आरोग्य तपासणी</p>
+                                <p><strong>पत्ता:</strong> मौजे ढवळापूर</p>
+                                <p><strong>संपर्क:</strong> —</p>
+                                <p><strong>आपत्कालीन:</strong> —</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Facility 3: PHC -->
+                    <div class="facility-card wow fadeIn" data-wow-delay="0.3s">
+                        <img src="img/phc%20(1).jpg" alt="प्राथमिक आरोग्य केंद्र" class="facility-image">
+                        <div class="facility-body">
+                            <h4 class="facility-title">प्राथमिक आरोग्य केंद्र</h4>
+                            <p class="facility-desc">
+                                लसीकरण, प्राथमिक उपचार, सामान्य औषधे उपलब्ध.
+                            </p>
+                            <div class="facility-details">
+                                <p><strong>पत्ता:</strong> प्राथमिक आरोग्य केंद्र, ढवळापूर</p>
+                                <p><strong>वेळ:</strong> १०:३० ते ५:००</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Service End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid footer py-5 position-relative overflow-hidden" style="background: #121212;">
+    <!-- Diagonal Split Background -->
+    <div class="diagonal-bg"></div>
+
+    <div class="container position-relative" style="z-index: 2;">
+        <div class="row g-5 py-5">
+
+            <!-- Office Info -->
+            <div class="col-lg-3 col-md-6">
+                <h4 class="text-warning mb-4" style="font-weight: 600; letter-spacing: 1px;">कार्यालय</h4>
+                <a class="btn btn-link text-light d-block mb-2"><i class="fa fa-map-marker-alt me-3 text-warning"></i>ग्रामपंचायत, हनुमान मंदिर ढवळापूर ता.काटोल 
+, जि. नागपूर</p>
+                <a class="btn btn-link text-light d-block mb-2"><i class="fa fa-phone-alt me-3 text-warning"></i>७२१८२०९२७६</p>
+                <a class="btn btn-link text-light d-block mb-2"><i class="fa fa-envelope me-3 text-warning"></i>gpdhawalapur@gmail.com</p>
+                <div class="d-flex pt-3">
+                    <a class="btn btn-outline-warning btn-sm me-2" href="#!" aria-label="Twitter">
+                        <i class="fab fa-x-twitter"></i>
+                    </a>
+                    <a class="btn btn-outline-warning btn-sm me-2" href="#!" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a class="btn btn-outline-warning btn-sm me-2" href="#!" aria-label="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a class="btn btn-outline-warning btn-sm me-2" href="#!" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="col-lg-3 col-md-6">
+                <h4 class="text-warning mb-4" style="font-weight: 600; letter-spacing: 1px;">झटपट दुवे</h4>
+                <a class="btn btn-link text-light d-block mb-2" href="#!">शासकीय योजना</a>
+                <a class="btn btn-link text-light d-block mb-2" href="#!">सोई-सुविधा</a>
+                <a class="btn btn-link text-light d-block mb-2" href="#!">बजेट आणि निधी</a>
+            </div>
+
+            <!-- Office Hours -->
+            <div class="col-lg-3 col-md-6">
+                <h4 class="text-warning mb-4" style="font-weight: 600; letter-spacing: 1px;">कार्यालयीन वेळा</h4>
+                <p class="text-warning">सप्ताहाचे दिवस</p>
+                <h6 class="text-warning">०९:३० - ५:३०</h6>
+                <p class="text-warning">शनिवार</p>
+                <h6 class="text-warning">०९:३० - १:००</h6>
+                <p class="text-warning">रविवार</p>
+                <h6 class="text-warning">बंद</h6>
+            </div>
+
+            <!-- Gallery -->
+            <div class="col-lg-3 col-md-6">
+                <h4 class="text-warning mb-4" style="font-weight: 600; letter-spacing: 1px;">गॅलरी</h4>
+                <div class="row g-2">
+                    <div class="col-4">
+                        <a href="img/gallery-1.jpg" data-lightbox="footer-gallery">
+                            <img class="img-fluid w-100 rounded shadow-sm" src="img/gallery-1.jpg" alt="Gallery 1" style="height: 70px; object-fit: cover;">
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <a href="img/gallery-2.jpg" data-lightbox="footer-gallery">
+                            <img class="img-fluid w-100 rounded shadow-sm" src="img/gallery-2.jpg" alt="Gallery 2" style="height: 70px; object-fit: cover;">
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <a href="img/gallery-3.jpg" data-lightbox="footer-gallery">
+                            <img class="img-fluid w-100 rounded shadow-sm" src="img/gallery-3.jpg" alt="Gallery 3" style="height: 70px; object-fit: cover;">
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <a href="img/gallery-4.jpg" data-lightbox="footer-gallery">
+                            <img class="img-fluid w-100 rounded shadow-sm" src="img/gallery-4.jpg" alt="Gallery 4" style="height: 70px; object-fit: cover;">
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <a href="img/gallery-5.jpg" data-lightbox="footer-gallery">
+                            <img class="img-fluid w-100 rounded shadow-sm" src="img/gallery-5.jpg" alt="Gallery 5" style="height: 70px; object-fit: cover;">
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <a href="img/gallery-6.jpg" data-lightbox="footer-gallery">
+                            <img class="img-fluid w-100 rounded shadow-sm" src="img/gallery-6.jpg" alt="Gallery 6" style="height: 70px; object-fit: cover;">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="copyright border-top border-light pt-4 mt-4">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <p class="mb-0 text-light" style="font-size: 0.9rem;">
+                        &copy; <a href="#!" class="text-warning fw-semibold" style="text-decoration: none;">ढवळापूर ग्रामपंचायत</a>, सर्व हक्क राखीव. | २०२५
+                    </p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-0 text-light" style="font-size: 0.85rem;">
+                        डिझाइन: <a href="#" class="text-warning" style="text-decoration: none;">eGramSevak.in</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#!" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="../../../code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="../../../cdn.jsdelivr.net/npm/bootstrap%405.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Add active class to current page
+        document.addEventListener('DOMContentLoaded', function() {
+            const currentLocation = window.location.href;
+            const menuItems = document.querySelectorAll('.nav-link');
+            
+            menuItems.forEach(item => {
+                if (item.href === currentLocation) {
+                    item.classList.add('active');
+                }
+            });
+            
+            // Mobile dropdown enhancement
+            const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
+            dropdownToggles.forEach(toggle => {
+                toggle.addEventListener('click', function(e) {
+                    if (window.innerWidth < 992) {
+                        e.preventDefault();
+                        const dropdownMenu = this.nextElementSibling;
+                        dropdownMenu.classList.toggle('show');
+                    }
+                });
+            });
+        });
+    </script>
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+
+<!-- Mirrored from egramsevak.in/GPWeb/template2/facilities.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 15 Nov 2025 13:01:48 GMT -->
+</html>

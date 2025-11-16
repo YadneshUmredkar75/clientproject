@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from egramsevak.in/GPWeb/template2/annoucements.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 15 Nov 2025 13:01:43 GMT -->
+<head>
+   <meta charset="utf-8">
+    <title>सुंदरखेड ग्रामपंचायत</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+    <link href="img/favicon.html" rel="icon">
+    <link rel="preconnect" href="../../../fonts.googleapis.com/index.html">
+    <link rel="preconnect" href="../../../fonts.gstatic.com/index.html" crossorigin>
+    <link href="../../../fonts.googleapis.com/css27302.css?family=Tiro+Devanagari+Sanskrit:ital@0;1&amp;display=swap" rel="stylesheet">
+    <link href="../../../cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" rel="stylesheet">
+    <link href="../../../cdn.jsdelivr.net/npm/bootstrap-icons%401.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+     <style>
+        .diagonal-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #f8f5f0 50%, #800000 50%);
+    z-index: 1;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 60%);
+}
+
+/* Text on Cream Part */
+.footer .col-lg-3:nth-child(-n+2) {
+    color: #333;
+}
+
+.footer .col-lg-3:nth-child(-n+2) h4,
+.footer .col-lg-3:nth-child(-n+2) h6,
+.footer .col-lg-3:nth-child(-n+2) a {
+    color: #800000 !important;
+}
+
+.footer .col-lg-3:nth-child(-n+2) .text-warning {
+    color: #800000 !important;
+}
+
+.footer .col-lg-3:nth-child(-n+2) .btn-outline-warning {
+    border-color: #800000;
+    color: #800000;
+}
+
+.footer .col-lg-3:nth-child(-n+2) .btn-outline-warning:hover {
+    background: #800000;
+    color: #f8f5f0;
+}
+
+/* Text on Maroon Part */
+.footer .col-lg-3:nth-child(n+3) {
+    color: #f8f5f0;
+}
+
+.footer .col-lg-3:nth-child(n+3) h4,
+.footer .col-lg-3:nth-child(n+3) h6,
+.footer .col-lg-3:nth-child(n+3) a {
+    color: #f8f5f0 !important;
+}
+
+.footer .col-lg-3:nth-child(n+3) .text-warning {
+    color: black !important;
+}
+
+/* Hover Effects */
+.footer a:hover {
+    color: #ffc107 !important;
+    text-decoration: underline !important;
+}
+
+.footer img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(128, 0, 0, 0.3) !important;
+}
+
+.footer .btn-outline-warning {
+    transition: all 0.3s ease;
+}
+
+.footer .btn-outline-warning:hover {
+    transform: translateY(-2px);
+}
+
+/* Responsive Fix */
+@media (max-width: 992px) {
+    .diagonal-bg {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 70%);
+    }
+}
+        :root {
+            --cream: #f8f5f0;
+            --maroon: #800000;
+            --gold: #ffc107;
+            --dark: #000;
+        }
+
+        body {
+            background: var(--cream);
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            color: var(--dark);
+        }
+
+        /* Notices Section */
+        .notices-section {
+            padding: 90px 0 60px;
+            background: var(--cream);
+        }
+
+        .section-title {
+            color: var(--maroon) !important;
+            font-weight: 700;
+            font-size: 1rem;
+            padding: 8px 24px;
+            background: #fff;
+            border-radius: 50px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+            display: inline-block;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -8px; left: 50%;
+            width: 60px; height: 3px;
+            background: var(--gold);
+            border-radius: 2px;
+            transform: translateX(-50%);
+        }
+
+        .notices-section h1 {
+            color: var(--dark) !important;
+            font-weight: 700;
+            font-size: 1.9rem;
+            margin: 18px 0 10px;
+            line-height: 1.3;
+        }
+
+        .notices-section p.lead {
+            color: #555;
+            font-size: 1rem;
+            margin-bottom: 30px;
+        }
+
+        /* Notice Card */
+        .notice-card {
+            background: #fff;
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+            transition: all 0.35s ease;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .notice-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 16px 35px rgba(0,0,0,0.16);
+            border: 2.5px solid var(--gold);
+        }
+
+        .notice-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            transition: 0.35s;
+        }
+
+        .notice-card:hover img {
+            transform: scale(1.06);
+        }
+
+        .notice-body {
+            padding: 20px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .notice-title {
+            color: var(--dark);
+            font-weight: 700;
+            font-size: 1.15rem;
+            margin: 0 0 10px;
+            line-height: 1.3;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .notice-title:hover {
+            color: var(--maroon);
+        }
+
+        .notice-desc {
+            color: #555;
+            font-size: 0.95rem;
+            margin: 0 0 16px;
+            flex-grow: 1;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .notice-meta {
+            background: #f9f9f9;
+            padding: 14px 16px;
+            border-top: 1px solid #eee;
+            font-size: 0.88rem;
+            color: #444;
+        }
+
+        .notice-meta i {
+            color: var(--maroon);
+            width: 18px;
+            font-size: 1rem;
+        }
+
+        /* Responsive Grid */
+        .notices-row {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 24px;
+            margin: 0;
+        }
+
+        @media (min-width: 576px) {
+            .notices-row { grid-template-columns: repeat(2, 1fr); }
+        }
+
+        @media (min-width: 992px) {
+            .notices-row { grid-template-columns: repeat(3, 1fr); }
+        }
+
+        /* Banner */
+        .banner-section {
+            padding: 60px 0;
+            background: linear-gradient(135deg, var(--maroon) 0%, #a00000 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .banner-section::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0,0,0,0.05);
+        }
+
+        .banner-inner {
+            background: #fff;
+            padding: 40px 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            position: relative;
+            z-index: 2;
+        }
+
+        .banner-inner h1 {
+            color: var(--dark);
+            font-weight: 700;
+            font-size: 1.8rem;
+            margin-bottom: 16px;
+            line-height: 1.3;
+        }
+
+        .banner-inner p {
+            color: #444;
+            font-size: 1rem;
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        /* Wave */
+        .notices-section::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 18px;
+            background: linear-gradient(90deg, var(--maroon), #a00000, var(--maroon));
+            clip-path: ellipse(80% 100% at 50% 0%);
+        }
+        /* navbar */
+        
+        /* ---------- COLORS ---------- */
+        .bg-cream { background:#f8f5f0 !important; }
+        .text-black { color:#000 !important; }
+        .text-golden { color:#ffc107 !important; }
+
+        /* ---------- TOP BAR DIAGONAL ---------- */
+        .top-bar-wrapper { 
+            position:relative; 
+            overflow:hidden; 
+            background:#800000; 
+        }
+        .top-bar-diagonal {
+            position:absolute; 
+            top:0; 
+            left:0; 
+            width:100%; 
+            height:100%;
+            background:linear-gradient(135deg, #f8f5f0 45%, #800000 45%);
+            z-index:1;
+        }
+
+        /* ---------- TOP BAR CONTENT ---------- */
+        .top-bar { 
+            position:relative; 
+            z-index:2; 
+        }
+        .top-icon { 
+            font-size:1.3rem; 
+            width:40px; 
+            text-align:center; 
+        }
+
+        /* ---------- NAVBAR ---------- */
+        .navbar-custom { 
+            background:#f8f5f0 !important; 
+            box-shadow:0 2px 10px rgba(0,0,0,.1); 
+        }
+
+        .navbar-custom .navbar-brand,
+        .navbar-custom .nav-link,
+        .navbar-custom .dropdown-item,
+        .navbar-custom .form-select,
+        .navbar-custom .social-btn { 
+            color:#000 !important; 
+            font-weight:500; 
+        }
+
+        /* Hover & Active */
+        .navbar-custom .nav-link:hover,
+        .navbar-custom .nav-link.active,
+        .navbar-custom .dropdown-item:hover { 
+            color:#ffc107 !important; 
+        }
+
+        /* Underline */
+        .navbar-custom .nav-link {
+            position:relative; 
+            padding:.5rem 1rem; 
+            transition:.3s;
+        }
+        .navbar-custom .nav-link::after {
+            content:''; 
+            position:absolute; 
+            bottom:0; 
+            left:50%;
+            width:0; 
+            height:2px; 
+            background:#ffc107;
+            transition:.3s; 
+            transform:translateX(-50%);
+        }
+        .navbar-custom .nav-link:hover::after,
+        .navbar-custom .nav-link.active::after { 
+            width:70%; 
+        }
+
+        /* Dropdown Menu */
+        .dropdown-menu { 
+            background:white; 
+            border:1px solid black; 
+            box-shadow:0 5px 15px rgba(0,0,0,.1); 
+        }
+        .dropdown-item { 
+            transition:.3s; 
+        }
+        .dropdown-item:hover { 
+            background:#800000; 
+            color:white !important; 
+        }
+
+        /* Social & Language */
+        .social-btn {
+            display:inline-flex; 
+            align-items:center; 
+            justify-content:center;
+            width:36px; 
+            height:36px; 
+            border:1.5px solid #000;
+            border-radius:50%; 
+            font-size:.9rem; 
+            transition:.3s;
+        }
+        .social-btn:hover { 
+            background:#000; 
+            color:#f8f5f0 !important; 
+            transform:translateY(-2px); 
+        }
+        .lang-select { 
+            min-width:90px; 
+            font-size:.9rem; 
+            border:1.5px solid #000; 
+        }
+
+        /* FIXED TOGGLE BUTTON STYLES */
+        .navbar-toggler {
+            border: 1.5px solid #000 !important;
+            padding: 4px 8px;
+        }
+        
+        .navbar-toggler:focus {
+            box-shadow: none !important;
+        }
+        
+        .navbar-toggler-icon-custom {
+            display: inline-block;
+            width: 1.5em;
+            height: 1.5em;
+            vertical-align: middle;
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100%;
+        }
+
+        /* ---------- RESPONSIVE ---------- */
+        @media (max-width: 992px) {
+            .top-info { 
+                justify-content:center !important; 
+                margin-bottom:1rem; 
+            }
+            .navbar-nav { 
+                text-align:center; 
+                padding: 1rem 0;
+            }
+            .navbar-custom .nav-link::after { 
+                display:none; 
+            }
+            
+            /* Improved mobile dropdown styling */
+            .dropdown-menu {
+                text-align: center;
+                background: rgba(248, 245, 240, 0.9);
+                border: none;
+                margin-top: 0.5rem;
+            }
+            
+            .dropdown-toggle::after {
+                margin-left: 0.5rem;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .site-title { 
+                font-size:1.4rem !important; 
+            }
+            .top-info strong { 
+                font-size:.9rem; 
+            }
+            
+            .navbar-brand {
+                font-size: 1.2rem;
+            }
+        }
+
+        /* Mobile dropdown fix – make it full-width & clickable */
+        @media (max-width: 991.98px) {
+            .dropdown-toggle { 
+                width:100%; 
+                text-align:center; 
+            }
+            .dropdown-menu { 
+                position:static; 
+                float:none; 
+                width:100%; 
+                margin-top:0; 
+            }
+        }
+        
+        /* Demo content styles */
+        .demo-content {
+            padding: 2rem;
+            background: #f8f9fa;
+            min-height: 400px;
+        }
+        
+        .demo-section {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+        }
+   
+    </style>
+</head>
+
+<body>
+  
+    <!-- ==================== TOP BAR ==================== -->
+    <div class="top-bar-wrapper">
+        <div class="top-bar-diagonal"></div>
+
+        <div class="container-fluid top-bar py-3">
+            <div class="container position-relative" style="z-index:2;">
+                <div class="row align-items-center text-center text-lg-start">
+
+                    <!-- Site Title -->
+                    <div class="col-lg-4 mb-3 mb-lg-0">
+                        <h2 class="site-title text-black fw-bold mb-0">ढवळापूर ग्रामपंचायत</h2>
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div class="col-lg-8">
+                        <div class="row text-black g-2 justify-content-center justify-content-lg-end">
+
+                            <div class="col-6 col-sm-4 col-lg-4 top-info d-flex align-items-center justify-content-center justify-content-lg-start">
+                                <div class="top-icon text-warning me-2"><i class="fa fa-phone-alt"></i></div>
+                                <div><div class="small">आपातकालीन</div><strong>७२१८२०९२७६</strong></div>
+                            </div>
+
+                            <div class="col-6 col-sm-4 col-lg-4 top-info d-flex align-items-center justify-content-center justify-content-lg-start">
+                                <div class="top-icon text-warning me-2"><i class="fa fa-envelope-open"></i></div>
+                                <div><div class="small">ईमेल</div><strong>gpdhawalapur@gmail.com</strong></div>
+                            </div>
+
+                            <div class="col-12 col-sm-4 col-lg-4 top-info d-flex align-items-center justify-content-center justify-content-lg-start">
+                                <div class="top-icon text-warning me-2"><i class="fa fa-map-marker-alt"></i></div>
+                                <div><div class="small">पत्ता</div><strong>हनुमान मंदिर ढवळापूर ता.काटोल 
+</strong></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== NAVBAR ==================== -->
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container">
+
+            <!-- Brand -->
+            <a class="navbar-brand text-black fw-bold" href="#">
+</a>
+
+            <!-- FIXED TOGGLER BUTTON -->
+            <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#navMenu"
+                    aria-controls="navMenu" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon-custom"></span>
+            </button>
+
+            <!-- COLLAPSIBLE MENU -->
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item">
+                        <a class="nav-link text-black active" href="index.html">मुख्यपृष्ठ</a>
+                    </li>
+
+                    <!-- Dropdown 1 -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-black" href="#" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            आमच्याबद्दल
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="about.html">परिचय</a></li>
+                            <li><a class="dropdown-item" href="team.html">पंचायत मंडळ</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-black" href="annoucements.html">सूचना</a>
+                    </li>
+
+                    <!-- Dropdown 2 -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-black" href="#" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            सेवा
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="service.html">नागरिक सेवा</a></li>
+                            <li><a class="dropdown-item" href="facilities.html">स्थानीय सुविधा</a></li>
+                            
+
+                            <li><a class="dropdown-item" href="govt-schemes.html">शासकीय योजना</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-black" href="gallery.html">गॅलरी</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-black" href="contact.html">संपर्क</a>
+                    </li>
+
+                </ul>
+
+                <!-- Right side -->
+                <div class="d-flex align-items-center gap-2">
+                    <select class="form-select form-select-sm lang-select">
+                        <option>मराठी</option>
+                        <option>English</option>
+                    </select>
+                    <a href="#" class="social-btn text-black"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-btn text-black"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+  
+
+
+  <!-- NOTICES & TENDERS SECTION -->
+<div class="container-fluid notices-section position-relative">
+    <div class="container">
+        <div class="text-center mx-auto mb-5" style="max-width: 600px;">
+            <p class="section-title position-relative">सूचना व निविदा</p>
+            <h1>गावातील रहिवाशांसाठी सूचना आणि महत्वाची माहिती</h1>
+            <p class="lead">ग्रामपंचायतीच्या नवीनतम अपडेट्स, निविदा, सभा आणि उपक्रमांबद्दल जागरूक राहा.</p>
+        </div>
+
+        <!-- Responsive Grid -->
+        <div class="notices-row">
+
+            <!-- Notice 1 -->
+            <div class="notice-card wow fadeIn" data-wow-delay="0.1s">
+                <img src="img/sabha.jpg" alt="पंचायत सभा">
+                <div class="notice-body">
+                    <a href="#" class="notice-title" data-bs-toggle="modal" data-bs-target="#notice1">
+                        पंचायत सभा
+                    </a>
+                    <p class="notice-desc">सर्व ग्रामस्थ उपस्थित राहावेत. महत्वाच्या विषयांवर चर्चा होणार आहे.</p>
+                    <div class="notice-meta">
+                        <p class="mb-1"><i class="fa fa-clock me-2"></i>सकाळी १० वाजता</p>
+                        <p class="mb-1"><i class="fa fa-calendar-alt me-2"></i>३० सप्टेंबर २०२५</p>
+                        <p class="mb-0"><i class="fa fa-map-marker-alt me-2"></i>हनुमान मंदिर, ढवळापूर</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Notice 2 -->
+            <div class="notice-card wow fadeIn" data-wow-delay="0.3s">
+                <img src="img/waste.jpg" alt="कचरा व्यवस्थापन">
+                <div class="notice-body">
+                    <a href="#" class="notice-title" data-bs-toggle="modal" data-bs-target="#notice2">
+                        कचरा व्यवस्थापनाबाबत सूचना
+                    </a>
+                    <p class="notice-desc">गावात कचरा गोळा करणारी गाडी दररोज फिरणार आहे. कृपया सहकार्य करा.</p>
+                    <div class="notice-meta">
+                        <p class="mb-1"><i class="fa fa-clock me-2"></i>सकाळी ७:३० ते १०:००</p>
+                        <p class="mb-1"><i class="fa fa-calendar-alt me-2"></i>दररोज</p>
+                        <p class="mb-0"><i class="fa fa-map-marker-alt me-2"></i>पूरा गाव</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Notice 3 -->
+            <div class="notice-card wow fadeIn" data-wow-delay="0.5s">
+                <img src="img/road-work.jpg" alt="रस्ता दुरुस्ती टेंडर">
+                <div class="notice-body">
+                    <a href="#" class="notice-title" data-bs-toggle="modal" data-bs-target="#notice3">
+                        रस्ता दुरुस्ती टेंडर
+                    </a>
+                    <p class="notice-desc">टेंडर कागदपत्रे उपलब्ध आहेत. इच्छुक कंत्राटदार अर्ज करू शकतात.</p>
+                    <div class="notice-meta">
+                        <p class="mb-1"><i class="fa fa-clock me-2"></i>७:३० ते ५:३०</p>
+                        <p class="mb-1"><i class="fa fa-calendar-alt me-2"></i>अंतिम तारीख १० ऑक्टोबर २०२५</p>
+                        <p class="mb-0"><i class="fa fa-map-marker-alt me-2"></i>ग्रामपंचायत कार्यालय</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- BANNER SECTION -->
+<div class="container-fluid banner-section position-relative">
+    <div class="container">
+        <div class="banner-inner text-center wow fadeIn" data-wow-delay="0.1s">
+            <h1>ग्राम प्रशासनाकडून नवीनतम अपडेट्स, सूचना आणि महत्त्वाच्या माहितीबद्दल अद्ययावत राहा</h1>
+            <p>ग्रामपंचायतीद्वारे आयोजित सामुदायिक बैठका, सूचना, उत्सव आणि उपक्रमांबद्दल अपडेट राहा.</p>
+        </div>
+    </div>
+</div>
+
+<!-- MODALS (Click to view full details) -->
+<div class="modal fade" id="notice1" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header border-0 pb-0">
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body text-center p-4">
+                <img src="img/sabha.jpg" class="img-fluid rounded mb-3" style="max-height: 200px;">
+                <h5 class="fw-bold">पंचायत सभा</h5>
+                <p class="text-muted mb-3">सर्व ग्रामस्थ उपस्थित राहावेत. महत्वाच्या विषयांवर चर्चा होणार आहे.</p>
+                <div class="text-start">
+                    <p><i class="fa fa-clock text-primary me-2"></i><strong>वेळ:</strong> सकाळी १० वाजता</p>
+                    <p><i class="fa fa-calendar-alt text-primary me-2"></i><strong>तारीख:</strong> ३० सप्टेंबर २०२५</p>
+                    <p><i class="fa fa-map-marker-alt text-primary me-2"></i><strong>स्थळ:</strong> हनुमान मंदिर, हनुमान मंदिर ढवळापूर ता.काटोल 
+, जि. नागपूर</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="notice2" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header border-0 pb-0">
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body text-center p-4">
+                <img src="img/waste.jpg" class="img-fluid rounded mb-3" style="max-height: 200px;">
+                <h5 class="fw-bold">कचरा व्यवस्थापनाबाबत सूचना</h5>
+                <p class="text-muted mb-3">गावात कचरा गोळा करणारी गाडी दररोज फिरणार आहे. कृपया सहकार्य करा.</p>
+                <div class="text-start">
+                    <p><i class="fa fa-clock text-primary me-2"></i><strong>वेळ:</strong> सकाळी ७:३० ते १०:००</p>
+                    <p><i class="fa fa-calendar-alt text-primary me-2"></i><strong>दिवस:</strong> दररोज</p>
+                    <p><i class="fa fa-map-marker-alt text-primary me-2"></i><strong>क्षेत्र:</strong> संपूर्ण गाव</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="notice3" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header border-0 pb-0">
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body text-center p-4">
+                <img src="img/road-work.jpg" class="img-fluid rounded mb-3" style="max-height: 200px;">
+                <h5 class="fw-bold">रस्ता दुरुस्ती टेंडर</h5>
+                <p class="text-muted mb-3">टेंडर कागदपत्रे उपलब्ध आहेत. इच्छुक कंत्राटदार अर्ज करू शकतात.</p>
+                <div class="text-start">
+                    <p><i class="fa fa-clock text-primary me-2"></i><strong>वेळ:</strong> ७:३० ते ५:३०</p>
+                    <p><i class="fa fa-calendar-alt text-primary me-2"></i><strong>अंतिम तारीख:</strong> १० ऑक्टोबर २०२५</p>
+                    <p><i class="fa fa-map-marker-alt text-primary me-2"></i><strong>स्थळ:</strong> ग्रामपंचायत कार्यालय</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Banner End -->
+
+
+    <!-- Footer Start -->
+   <div class="container-fluid footer py-5 position-relative overflow-hidden" style="background: #121212;">
+    <!-- Diagonal Split Background -->
+    <div class="diagonal-bg"></div>
+
+    <div class="container position-relative" style="z-index: 2;">
+        <div class="row g-5 py-5">
+
+            <!-- Office Info -->
+            <div class="col-lg-3 col-md-6">
+                <h4 class="text-warning mb-4" style="font-weight: 600; letter-spacing: 1px;">कार्यालय</h4>
+                <a class="btn btn-link text-light d-block mb-2"><i class="fa fa-map-marker-alt me-3 text-warning"></i>ग्रामपंचायत, हनुमान मंदिर ढवळापूर ता.काटोल 
+, जि. नागपूर</p>
+                <a class="btn btn-link text-light d-block mb-2"><i class="fa fa-phone-alt me-3 text-warning"></i>७२१८२०९२७६</p>
+                <a class="btn btn-link text-light d-block mb-2"><i class="fa fa-envelope me-3 text-warning"></i>gpdhawalapur@gmail.com</p>
+                <div class="d-flex pt-3">
+                    <a class="btn btn-outline-warning btn-sm me-2" href="#!" aria-label="Twitter">
+                        <i class="fab fa-x-twitter"></i>
+                    </a>
+                    <a class="btn btn-outline-warning btn-sm me-2" href="#!" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a class="btn btn-outline-warning btn-sm me-2" href="#!" aria-label="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a class="btn btn-outline-warning btn-sm me-2" href="#!" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="col-lg-3 col-md-6">
+                <h4 class="text-warning mb-4" style="font-weight: 600; letter-spacing: 1px;">झटपट दुवे</h4>
+                <a class="btn btn-link text-light d-block mb-2" href="#!">शासकीय योजना</a>
+                <a class="btn btn-link text-light d-block mb-2" href="#!">सोई-सुविधा</a>
+                <a class="btn btn-link text-light d-block mb-2" href="#!">बजेट आणि निधी</a>
+            </div>
+
+            <!-- Office Hours -->
+            <div class="col-lg-3 col-md-6">
+                <h4 class="text-warning mb-4" style="font-weight: 600; letter-spacing: 1px;">कार्यालयीन वेळा</h4>
+                <p class="text-warning">सप्ताहाचे दिवस</p>
+                <h6 class="text-warning">०९:३० - ५:३०</h6>
+                <p class="text-warning">शनिवार</p>
+                <h6 class="text-warning">०९:३० - १:००</h6>
+                <p class="text-warning">रविवार</p>
+                <h6 class="text-warning">बंद</h6>
+            </div>
+
+            <!-- Gallery -->
+            <div class="col-lg-3 col-md-6">
+                <h4 class="text-warning mb-4" style="font-weight: 600; letter-spacing: 1px;">गॅलरी</h4>
+                <div class="row g-2">
+                    <div class="col-4">
+                        <a href="img/gallery-1.jpg" data-lightbox="footer-gallery">
+                            <img class="img-fluid w-100 rounded shadow-sm" src="img/gallery-1.jpg" alt="Gallery 1" style="height: 70px; object-fit: cover;">
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <a href="img/gallery-2.jpg" data-lightbox="footer-gallery">
+                            <img class="img-fluid w-100 rounded shadow-sm" src="img/gallery-2.jpg" alt="Gallery 2" style="height: 70px; object-fit: cover;">
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <a href="img/gallery-3.jpg" data-lightbox="footer-gallery">
+                            <img class="img-fluid w-100 rounded shadow-sm" src="img/gallery-3.jpg" alt="Gallery 3" style="height: 70px; object-fit: cover;">
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <a href="img/gallery-4.jpg" data-lightbox="footer-gallery">
+                            <img class="img-fluid w-100 rounded shadow-sm" src="img/gallery-4.jpg" alt="Gallery 4" style="height: 70px; object-fit: cover;">
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <a href="img/gallery-5.jpg" data-lightbox="footer-gallery">
+                            <img class="img-fluid w-100 rounded shadow-sm" src="img/gallery-5.jpg" alt="Gallery 5" style="height: 70px; object-fit: cover;">
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <a href="img/gallery-6.jpg" data-lightbox="footer-gallery">
+                            <img class="img-fluid w-100 rounded shadow-sm" src="img/gallery-6.jpg" alt="Gallery 6" style="height: 70px; object-fit: cover;">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="copyright border-top border-light pt-4 mt-4">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <p class="mb-0 text-light" style="font-size: 0.9rem;">
+                        &copy; <a href="#!" class="text-warning fw-semibold" style="text-decoration: none;">ढवळापूर ग्रामपंचायत</a>, सर्व हक्क राखीव. | २०२५
+                    </p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-0 text-light" style="font-size: 0.85rem;">
+                        डिझाइन: <a href="#" class="text-warning" style="text-decoration: none;">eGramSevak.in</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#!" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="../../../code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="../../../cdn.jsdelivr.net/npm/bootstrap%405.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Add active class to current page
+        document.addEventListener('DOMContentLoaded', function() {
+            const currentLocation = window.location.href;
+            const menuItems = document.querySelectorAll('.nav-link');
+            
+            menuItems.forEach(item => {
+                if (item.href === currentLocation) {
+                    item.classList.add('active');
+                }
+            });
+            
+            // Mobile dropdown enhancement
+            const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
+            dropdownToggles.forEach(toggle => {
+                toggle.addEventListener('click', function(e) {
+                    if (window.innerWidth < 992) {
+                        e.preventDefault();
+                        const dropdownMenu = this.nextElementSibling;
+                        dropdownMenu.classList.toggle('show');
+                    }
+                });
+            });
+        });
+    </script>
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+
+<!-- Mirrored from egramsevak.in/GPWeb/template2/annoucements.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 15 Nov 2025 13:01:45 GMT -->
+</html>
